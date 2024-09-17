@@ -5,6 +5,8 @@ public interface UserDao {
 	
 	UserModel findByUserName(String username);
 
+	void updatePassword(String username, String password);
+	
 	void insert(UserModel user);
 
 	boolean checkExistEmail(String email);

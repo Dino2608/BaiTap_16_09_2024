@@ -153,7 +153,7 @@
 				<button type="submit" class="btn btn-primary w-100">Login</button>
 			</form>
 			<p class="text-center mt-3">
-				<a href="#">Forgot your password?</a>
+				<a href="/Test/forgotPassword">Forgot your password?</a>
 			</p>
 		</div>
 	</div>

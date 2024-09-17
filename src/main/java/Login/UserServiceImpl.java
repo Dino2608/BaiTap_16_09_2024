@@ -49,4 +49,10 @@ public class UserServiceImpl implements UserService {
 	public void insert(UserModel user) {
 		userDao.insert(user);
 	}
+
+	@Override
+	public void updatePassword(String username, String password) {
+		userDao.updatePassword(username, password);
+		
+	}
 }

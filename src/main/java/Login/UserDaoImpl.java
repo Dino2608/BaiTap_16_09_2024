@@ -80,7 +80,6 @@ public class UserDaoImpl implements UserDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	@Override
@@ -138,5 +137,18 @@ public class UserDaoImpl implements UserDao {
 		} catch (Exception ex) {
 		}
 		return duplicate;
+	}
+
+	@Override
+	public void updatePassword(String username, String password) {
+		String query = "update [User] set [password] = ? where username = ?";
+		try {
+			conn = new DBConnectSQL().getConnection();
+			ps = conn.prepareStatement(query);
+			ps.setString(1, password);
+			ps.setString(2, username);
+			ps.executeUpdate();
+		} catch (Exception ex) {
+		}
 	}
 }
