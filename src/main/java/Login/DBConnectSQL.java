@@ -8,7 +8,7 @@ public class DBConnectSQL {
 	 private final String portNumber = "1433";
 	 private final String userID = "sa";
 	 private final String password = "20112004@Kn";
-	 
+
 	 public Connection getConnection() throws Exception {
 	 String url = "jdbc:sqlserver://" + serverName + ":" + portNumber + ";databaseName=" + dbName;
 
